@@ -38,11 +38,17 @@ This document describes Template::Plugin::Ligature version 0.01.
 
 =head1 SYNOPSIS
 
+Template:
+
     [% USE Ligature %]
 
     [% FILTER ligature %]
     Offloading floral offices refines effectiveness.
     [% END %]
+
+Output:
+
+    Oﬄoading ﬂoral oﬃces reﬁnes eﬀectiveness.
 
 =head1 DESCRIPTION
 
