@@ -1,0 +1,15 @@
+NAME
+    Template::Plugin::Ligature - Typographic ligature filter for TT
+
+VERSION
+    This document describes Template::Plugin::Ligature version 0.01.
+
+AUTHOR
+    Nick Patch <patch@cpan.org>
+
+COPYRIGHT AND LICENSE
+    Copyright 2011 Nick Patch
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
