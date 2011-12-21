@@ -1,4 +1,9 @@
 ---
+version: 0.02
+date:    2011-12-20
+changes:
+- Fixed POD encoding
+---
 version: 0.01
 date:    2011-12-20
 changes:

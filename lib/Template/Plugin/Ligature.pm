@@ -6,7 +6,7 @@ use warnings;
 use parent qw( Template::Plugin::Filter );
 use Text::Ligature qw( to_ligature );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use constant FILTER_NAME => 'ligature';
 
@@ -28,13 +28,15 @@ sub filter {
 
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
 Template::Plugin::Ligature - Typographic ligature filter for TT
 
 =head1 VERSION
 
-This document describes Template::Plugin::Ligature version 0.01.
+This document describes Template::Plugin::Ligature version 0.02.
 
 =head1 SYNOPSIS
 
@@ -52,24 +54,25 @@ Output:
 
 =head1 DESCRIPTION
 
-This is a L<Template::Toolkit> plug-in to filter text, replacing sequences of
+This is a L<Template::Toolkit> plugin to filter text, replacing sequences of
 characters with corresponding typographic ligatures using L<Text::Ligature>.
 
 When using this filter in HTML templates, one of the following steps will also
-need to be performed in order to properly display these Unicode ligature
-characters.
+need to be performed in order to properly display these Unicode ligatures.
 
 =over
 
-=item * Set the charset to UTF-8 in the HTTP response Content-Type header
+=item * Set the C<charset> to C<UTF-8> in the HTTP response C<Content-Type>
+header
 
     Content-Type: text/html; charset="UTF-8"
 
-=item * Set the charset to UTF-8 in the HTML Content-Type meta element
+=item * Set the C<charset> to C<UTF-8> in the HTML C<Content-Type> meta
+element
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-=item * Convert the ligatures to HTML entities using the html_entity filter
+=item * Convert the ligatures to HTML entities using the C<html_entity> filter
 
     [% $content | ligature | html_entity %]
 
