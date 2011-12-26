@@ -1,4 +1,9 @@
 ---
+version: 0.03
+date:    2011-12-25
+changes:
+- Updated for Text::Ligature 0.02 compatibility
+---
 version: 0.02
 date:    2011-12-20
 changes:

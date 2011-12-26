@@ -6,7 +6,7 @@ use warnings;
 use parent qw( Template::Plugin::Filter );
 use Text::Ligature qw( to_ligatures );
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use constant FILTER_NAME => 'ligature';
 
@@ -36,7 +36,7 @@ Template::Plugin::Ligature - Typographic ligature filter for TT
 
 =head1 VERSION
 
-This document describes Template::Plugin::Ligature version 0.02.
+This document describes Template::Plugin::Ligature version 0.03.
 
 =head1 SYNOPSIS
 

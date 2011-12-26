@@ -2,7 +2,7 @@ NAME
     Template::Plugin::Ligature - Typographic ligature filter for TT
 
 VERSION
-    This document describes Template::Plugin::Ligature version 0.02.
+    This document describes Template::Plugin::Ligature version 0.03.
 
 SYNOPSIS
     Template:
