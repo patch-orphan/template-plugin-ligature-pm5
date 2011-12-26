@@ -4,7 +4,7 @@ use 5.006;
 use strict;
 use warnings;
 use parent qw( Template::Plugin::Filter );
-use Text::Ligature qw( to_ligature );
+use Text::Ligature qw( to_ligatures );
 
 our $VERSION = '0.02';
 
@@ -21,7 +21,7 @@ sub init {
 sub filter {
     my ($self, $text) = @_;
 
-    return to_ligature($text);
+    return to_ligatures($text);
 }
 
 1;

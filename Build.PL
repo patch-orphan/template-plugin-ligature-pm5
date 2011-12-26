@@ -17,7 +17,7 @@ my $builder = Module::Build->new(
         'perl'           => '5.6.0',  # our()
         'parent'         => 0,
         'Template'       => 2.07,  # Template::Plugin::Filter
-        'Text::Ligature' => 0,
+        'Text::Ligature' => 0.02,  # to_ligatures(), from_ligatures()
     },
     meta_merge => {
         resources => {
