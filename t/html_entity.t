@@ -1,17 +1,20 @@
 use strict;
 use warnings;
 use utf8;
-use Template::Test;
+
+eval <<'END_BLOCK'
+use Test::More (
+    skip_all => 'HTML::Entities and Apache::Util not installed; skipping'
+)
+END_BLOCK
+    unless eval { require HTML::Entities } or eval { require Apache::Util };
+
+eval 'use Template::Test';
 
 test_expect(\*DATA);
 
 __DATA__
 [% USE Ligature %]
-
---test--
-[% 'offloading floral offices refines effectiveness' | ligature %]
---expect--
-oﬄoading ﬂoral oﬃces reﬁnes eﬀectiveness
 
 --test--
 [% 'offloading floral offices refines effectiveness' | ligature | html_entity %]
