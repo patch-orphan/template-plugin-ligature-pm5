@@ -6,7 +6,7 @@ use warnings;
 use parent qw( Template::Plugin::Filter );
 use Text::Ligature qw( to_ligatures );
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use constant FILTER_NAME => 'ligature';
 
@@ -36,7 +36,7 @@ Template::Plugin::Ligature - Typographic ligature filter for TT
 
 =head1 VERSION
 
-This document describes Template::Plugin::Ligature version 0.03.
+This document describes Template::Plugin::Ligature version 0.04.
 
 =head1 SYNOPSIS
 
@@ -84,7 +84,7 @@ Nick Patch <patch@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2011 Nick Patch
+Copyright 2011, 2012 Nick Patch
 
 This library is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.

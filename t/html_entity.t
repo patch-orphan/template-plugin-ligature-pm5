@@ -5,7 +5,7 @@ use utf8;
 eval <<'END_BLOCK'
 use Test::More (
     skip_all => 'HTML::Entities and Apache::Util not installed; skipping'
-)
+);
 END_BLOCK
     unless eval { require HTML::Entities } or eval { require Apache::Util };
 
